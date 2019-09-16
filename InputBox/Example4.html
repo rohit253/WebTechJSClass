@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+Updated Data
+</title>
+<script>
+var name = prompt("Enter Your Name","Name");
+now = new Date();
+hour = now.getHours();
+
+if(hour < 12){
+	document.write("<h1> Good Morning, ");
+}
+if(hour>=12)
+{
+	hour = hour -12;
+	
+	if(hour<6){
+		document.write("<h1> Good Afternoon, ");
+		
+	}
+	else{
+		document.write("<h1> Good Evening, ");
+	}
+}
+document.writeln(name + ", Welcome to Page!" + now.getDate() + "-" + now.getMonth() +"</h1>");
+</script> 
+</head>
+
+</html>
